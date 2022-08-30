@@ -61,6 +61,8 @@ const Modal = (props) =>{
         $( modalRef.current).on('hidden.bs.modal', function (event) {
             onClose();
           });
+
+          return ()=>false;
     }, []);
 
     useEffect( () =>{
@@ -76,8 +78,6 @@ const Modal = (props) =>{
             $( modalRef.current).modal('hide');
         }
 
-        return ()=>false;
-
     }, [isShow]);
 
     useEffect( () =>{
@@ -86,7 +86,6 @@ const Modal = (props) =>{
         setContactList([]);
         setCheckStatus(false)
         loadData();
-        return ()=>false;
 
     }, [modalType]);
 
