@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.center-container{
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-a-color, .btn-b-color{
+  color: #fff;
+}
+
+.btn-a-color{
+ background-color: #46139f;
+}
+
+.btn-b-color{
+ background-color: #ff7f50;
+}
+
+.btn-c-color{
+  background-color: #fff;
+  border-color: #46139f;
+ }
+
+.display-block{
+  display: block;
+}
